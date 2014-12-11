@@ -1,1 +1,0 @@
-<?php /* Delete this file and folder if not in use. */ ?>

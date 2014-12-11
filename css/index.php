@@ -1,1 +1,1 @@
-<?php /* Delete this file and folder if not in use. */ ?>
+<?php /* Place custom CSS files in this folder. */ ?>

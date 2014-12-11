@@ -1,10 +1,11 @@
 /**
  * Theme Name:  Saga Child
- * Theme URI:   http://themehybrid.com/themes/theme-slug
+ * Theme URI:   http://yoursite.com/link/to/theme
  * Description: Your theme description.
  * Version:     1.0.0
  * Author:      Your Name
  * Author URI:  http://yoursite.com
+ * Text Domain: saga-child
  * Tags:        custom-background, custom-colors, custom-header
  * License:     GNU General Public License v2.0 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,10 +16,10 @@
  * Note that the parent theme's `style.css` file is automatically loaded.  Do *not* try to load it again 
  * with `@import`.
  *
- * The only custom CSS you really should add to your child theme is CSS to overwrite colors and fonts.  The 
- * things available to be overwritten are labeled as the "Fun Zone" in the Saga theme's `style.css` file. 
- * Just open it up and check it out.  Everything is clearly marked and commented so that you can understand 
- * what you're allowed to overwrite.
+ * The only custom CSS you really should add to your child theme is CSS to overwrite colors, fonts, or other 
+ * "stylistic" things.  The things available to be overwritten are labeled as the "Fun Zone" in the Saga 
+ * theme's `style.css` file. Just open it up and check it out.  Everything is clearly marked and commented 
+ * so that you can understand what you're allowed to overwrite.
  *
  * To be perfectly honest, you could probably get away with not adding a single line of CSS code if you really 
  * go all out with some of the `functions.php` design options.

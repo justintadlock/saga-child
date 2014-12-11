@@ -1,18 +1,25 @@
 <?php
 /**
+ * This is your theme's `functions.php` file.  It's a dangerous but really powerful tool.  It essentially 
+ * gives you the power of a plugin developer from within the confines of a theme.  Use this feature 
+ * wisely, please.
+ *
+ * Make sure to change the `themeslug_` function prefix to a prefix that matches your theme name.  For 
+ * example, if your theme name is "Super Duper", your slug should be `super_duper_`. 
+ *
  * @package    ThemeName
  * @author     Your Name <you@youremailprovider.com>
  * @copyright  Copyright (c) 2014, Your Name
- * @link       http://themehybrid.com/themes/theme-slug
+ * @link       http://yoursite.com/link/to/theme
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-/* Add the child theme setup function to the 'after_setup_theme' hook. */
+/* Always set up theme on the `after_setup_theme` hook. */
 add_action( 'after_setup_theme', 'themeslug_theme_setup' );
 
 /**
- * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove 
- * filters and actions after the parent theme has been set up.  This function provides you that opportunity.
+ * Theme setup function.  This is where the theme should register things like headers and add its 
+ * callback functions for action/filter hooks.
  *
  * @since  1.0.0
  * @access public
@@ -58,28 +65,31 @@ function themeslug_theme_setup() {
 	//register_default_headers();
 
 	/*
-	 * Filter to add custom default backgrounds. Remove this section and its corresponding function 
-	 * if you do not wish to use it.
+	 * Uncomment to add custom default backgrounds.  See the `themeslug_default_backgrounds()` 
+	 * function below.  Remove this section and that function if you do not wish to use this feature.
 	 */
 	//add_filter( 'hybrid_default_backgrounds', 'themeslug_default_backgrounds' );
 
 	/*
-	 * Add a custom default icon for the "header_icon" option. Remove this section and its 
-	 * corresponding function if you do not wish to use it.
+	 * Uncomment to add a custom default icon for the "header_icon" option.  See the 
+	 * `themeslug_header_icon()` function below.  Remove this section and that function if you 
+	 * do not wish to use this feature.
 	 */
-	add_filter( 'theme_mod_header_icon', 'themeslug_header_icon' );
+	//add_filter( 'theme_mod_header_icon', 'themeslug_header_icon' );
 
 	/*
-	 * Add a custom default color for the "menu" color option. Remove this section and its 
-	 * corresponding function if you do not wish to use it.
+	 * Uncomment to add a custom default color for the "menu" color option. See the 
+	 * `themeslug_color_menu` function below.  Remove this section and that function if you 
+	 * do not wish to use this feature.
 	 */
-	add_filter( 'theme_mod_color_menu', 'themeslug_color_menu' );
+	//add_filter( 'theme_mod_color_menu', 'themeslug_color_menu' );
 
 	/*
-	 * Add a custom default color for the "primary" color option. Remove this section and its 
-	 * corresponding function if you do not wish to use it.
+	 * Uncomment to add a custom default color for the "primary" color option. See the 
+	 * `themeslug_color_primary` function below.  Remove this section and that function if you 
+	 * do not wish to use this feature.
 	 */
-	add_filter( 'theme_mod_color_primary', 'themeslug_color_primary' );
+	//add_filter( 'theme_mod_color_primary', 'themeslug_color_primary' );
 }
 
 /**
